@@ -3,4 +3,4 @@ https://adventofcode.com/
 
 Logická programovací hra o záchraně Vánoc a mé řešení k ní v C#.
 
-Některá řešení jsou inspirována @AoshiW, který je sdílí zde: https://github.com/AoshiW/AdventOfCode 
+S některými řešeními mi pomáhal @AoshiW, jeho pokus o řešení tohoto puzzlu najdete zde: https://github.com/AoshiW/AdventOfCode 
