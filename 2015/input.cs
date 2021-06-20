@@ -2,1007 +2,345 @@ namespace Advent_of_code
 {
     public static class Input
     {
-        public static string input = @"
-        uxcplgxnkwbdwhrp
-suerykeptdsutidb
-dmrtgdkaimrrwmej
-ztxhjwllrckhakut
-gdnzurjbbwmgayrg
-gjdzbtrcxwprtery
-fbuqqaatackrvemm
-pcjhsshoveaodyko
-lrpprussbesniilv
-mmsebhtqqjiqrusd
-vumllmrrdjgktmnb
-ptsqjcfbmgwdywgi
-mmppavyjgcfebgpl
-zexyxksqrqyonhui
-npulalteaztqqnrl
-mscqpccetkktaknl
-ydssjjlfejdxrztr
-jdygsbqimbxljuue
-ortsthjkmlonvgci
-jfjhsbxeorhgmstc
-vdrqdpojfuubjbbg
-xxxddetvrlpzsfpq
-zpjxvrmaorjpwegy
-laxrlkntrukjcswz
-pbqoungonelthcke
-niexeyzvrtrlgfzw
-zuetendekblknqng
-lyazavyoweyuvfye
-tegbldtkagfwlerf
-xckozymymezzarpy
-ehydpjavmncegzfn
-jlnespnckgwmkkry
-bfyetscttekoodio
-bnokwopzvsozsbmj
-qpqjhzdbuhrxsipy
-vveroinquypehnnk
-ykjtxscefztrmnen
-vxlbxagsmsuuchod
-punnnfyyufkpqilx
-zibnnszmrmtissww
-cxoaaphylmlyljjz
-zpcmkcftuuesvsqw
-wcqeqynmbbarahtz
-kspontxsclmbkequ
-jeomqzucrjxtypwl
-ixynwoxupzybroij
-ionndmdwpofvjnnq
-tycxecjvaxyovrvu
-uxdapggxzmbwrity
-csskdqivjcdsnhpe
-otflgdbzevmzkxzx
-verykrivwbrmocta
-ccbdeemfnmtputjw
-suyuuthfhlysdmhr
-aigzoaozaginuxcm
-ycxfnrjnrcubbmzs
-fgbqhrypnrpiizyy
-taoxrnwdhsehywze
-echfzdbnphlwjlew
-jhmomnrbfaawicda
-fywndkvhbzxxaihx
-aftuyacfkdzzzpem
-yytzxsvwztlcljvb
-iblbjiotoabgnvld
-kvpwzvwrsmvtdxcx
-ardgckwkftcefunk
-oqtivsqhcgrcmbbd
-wkaieqxdoajyvaso
-rkemicdsrtxsydvl
-sobljmgiahyqbirc
-pbhvtrxajxisuivj
-ggqywcbfckburdrr
-gmegczjawxtsywwq
-kgjhlwyonwhojyvq
-bpqlmxtarjthtjpn
-pxfnnuyacdxyfclr
-isdbibbtrqdfuopn
-vucsgcviofwtdjcg
-ywehopujowckggkg
-mzogxlhldvxytsgl
-mllyabngqmzfcubp
-uwvmejelibobdbug
-brebtoppnwawcmxa
-fcftkhghbnznafie
-sqiizvgijmddvxxz
-qzvvjaonnxszeuar
-abekxzbqttczywvy
-bkldqqioyhrgzgjs
-lilslxsibyunueff
-ktxxltqgfrnscxnx
-iwdqtlipxoubonrg
-twncehkxkhouoctj
-bdwlmbahtqtkduxz
-smbzkuoikcyiulxq
-bjmsdkqcmnidxjsr
-icbrswapzdlzdanh
-eyszxnhbjziiplgn
-pdxhrkcbhzqditwb
-nfulnpvtzimbzsze
-glayzfymwffmlwhk
-bejxesxdnwdlpeup
-ukssntwuqvhmsgwj
-hoccqxlxuuoomwyc
-rapztrdfxrosxcig
-cxowzhgmzerttdfq
-yzhcurqhdxhmolak
-kqgulndpxbwxesxi
-yjkgcvtytkitvxiu
-xnhfqhnnaceaqyue
-qkuqreghngfndifr
-xesxgeaucmhswnex
-occbvembjeuthryi
-dmefxmxqjncirdwj
-ystmvxklmcdlsvin
-pplykqlxmkdrmydq
-cbbjkpbdvjhkxnuc
-embhffzsciklnxrz
-asrsxtvsdnuhcnco
-xcbcrtcnzqedktpi
-mglwujflcnixbkvn
-mnurwhkzynhahbjp
-cekjbablkjehixtj
-kbkcmjhhipcjcwru
-usifwcsfknoviasj
-rsfgocseyeflqhku
-prgcyqrickecxlhm
-asbawplieizkavmq
-sylnsirtrxgrcono
-nzspjfovbtfkloya
-qfxmsprfytvaxgtr
-yckpentqodgzngnv
-ycsfscegcexcnbwq
-kbmltycafudieyuh
-tpahmvkftilypxuf
-qivqozjrmguypuxu
-gdhbfradjuidunbk
-vxqevjncsqqnhmkl
-rpricegggcfeihst
-xucvzpprwtdpzifq
-egyjcyyrrdnyhxoo
-kfbrzmbtrrwyeofp
-qpjdsocrtwzpjdkd
-reboldkprsgmmbit
-vwkrzqvvhqkensuy
-ydvmssepskzzvfdp
-vqbigplejygdijuu
-mzpgnahrhxgjriqm
-uiejixjadpfsxqcv
-tosatnvnfjkqiaha
-yipuojpxfqnltclx
-pcxwvgcghfpptjlf
-shrudjvvapohziaj
-jdckfjdtjsszdzhj
-hgisfhcbdgvxuilk
-gytnfjmrfujnmnpp
-ohflkgffnxmpwrrs
-jzxajbkwwjknasjh
-xrcxfollmejrislv
-djjlwykouhyfukob
-rittommltkbtsequ
-lpbvkxdcnlikwcxm
-vkcrjmcifhwgfpdj
-dkhjqwtggdrmcslq
-swnohthfvjvoasvt
-yrzoksmcnsagatii
-duommjnueqmdxftp
-inlvzlppdlgfmvmx
-xibilzssabuqihtq
-inkmwnvrkootrged
-ldfianvyugqtemax
-gbvwtiexcuvtngti
-temjkvgnwxrhdidc
-askbbywyyykerghp
-onezejkuwmrqdkfr
-kybekxtgartuurbq
-ubzjotlasrewbbkl
-stueymlsovqgmwkh
-lhduseycrewwponi
-yohdmucunrgemqcu
-onnfbxcuhbuifbyc
-odrjkigbrsojlqbt
-imqkqqlkgmttpxtx
-sxmlkspqoluidnxw
-akaauujpxhnccleb
-xvgpghhdtpgvefnk
-jdxeqxzsbqtvgvcq
-mdusenpygmerxnni
-agihtqvgkmgcbtaw
-dovxcywlyvspixad
-uulgazeyvgtxqkfz
-ndhmvrwuflhktzyo
-hcaqkmrbvozaanvm
-tvfozbqavqxdqwqv
-rlkpycdzopitfbsv
-dmyjtmjbtnvnedhs
-fmwmqeigbzrxjvdu
-twgookcelrjmczqi
-grxosmxvzgymjdtz
-zsstljhzugqybueo
-jpeapxlytnycekbd
-iasykpefrwxrlvxl
-azohkkqybcnsddus
-aoaekngakjsgsonx
-awsqaoswqejanotc
-sgdxmketnjmjxxcp
-ylnyuloaukdrhwuy
-ewoqjmakifbefdib
-ytjfubnexoxuevbp
-ewlreawvddptezdd
-vmkonztwnfgssdog
-ahbpuqygcwmudyxn
-kmahpxfjximorkrh
-otjbexwssgpnpccn
-aewskyipyztvskkl
-urqmlaiqyfqpizje
-nrfrbedthzymfgfa
-vndwwrjrwzoltfgi
-iiewevdzbortcwwe
-qiblninjkrkhzxgi
-xmvaxqruyzesifuu
-yewuzizdaucycsko
-hmasezegrhycbucy
-dwpjrmkhsmnecill
-hnffpbodtxprlhss
-avmrgrwahpsvzuhm
-nksvvaswujiukzxk
-zzzapwhtffilxphu
-vwegwyjkbzsrtnol
-qurpszehmkfqwaok
-iknoqtovqowthpno
-brlmpjviuiagymek
-efxebhputzeulthq
-mzkquarxlhlvvost
-xsigcagzqbhwwgps
-qufztljyzjxgahdp
-dlfkavnhobssfxvx
-hgdpcgqxjegnhjlr
-fboomzcvvqudjfbi
-wnjuuiivaxynqhrd
-nhcgzmpujgwisguw
-wjeiacxuymuhykgk
-qmeebvxijcgdlzpf
-nmmnxsehhgsgoich
-ejluaraxythbqfkl
-mdbsbwnaypvlatcj
-nnfshfibmvfqrbka
-dvckdmihzamgqpxr
-foztgqrjbwyxvewk
-okpryqcbvorcxhoh
-fpiwsndulvtthctx
-zrbiovlmzdmibsiq
-setwafbnnzcftutg
-nyvqghxhgkxfobdm
-enpvqadzarauhajl
-twblhpvkazpdmhmr
-lbhlllsgswvhdesh
-tdfwkgxnqjxcvsuo
-lnvyjjbwycjbvrrb
-jsxqdvmzaydbwekg
-xirbcbvwlcptuvoa
-hwnukxenilatlfsk
-khwopjqkxprgopmd
-sljzdoviweameskw
-stkrdmxmpaijximn
-fdilorryzhmeqwkc
-mfchaaialgvoozra
-gjxhoxeqgkbknmze
-beowovcoqnginrno
-mkgmsgwkwhizunxo
-phnhfusyoylvjdou
-csehdlcmwepcpzmq
-pgojomirzntgzohj
-fkffgyfsvwqhmboz
-mrvduasiytbzfwdn
-epzrmsifpmfaewng
-ooqxnoyqrlozbbyf
-ahcxfmgtedywrbnx
-ibqktvqmgnirqjot
-xarssauvofdiaefn
-xradvurskwbfzrnw
-nxklmulddqcmewad
-twichytatzoggchg
-qmgvroqwrjgcycyv
-yvezgulgrtgvyjjm
-jgmcklzjdmznmuqk
-bytajdwwconasjzt
-apjttucpycyghqhu
-flfejjzihodwtyup
-gmrtrwyewucyqotv
-nlohdrlymbkoenyl
-wxcmqwbrwgtmkyfe
-njtzlceyevmisxfn
-htbbidsfbbshmzlt
-gxhjeypjwghnrbsf
-cifcwnbtazronikv
-ezvjijcjcyszwdjy
-srffeyrvyetbecmc
-xpjefrtatrlkbkzl
-yhncvfqjcyhsxhbb
-pqhcufzlcezhihpr
-qtdsfvxfqmsnzisp
-dfonzdicxxhzxkrx
-mqqqzhxkyfpofzty
-dodjadoqyxsuazxt
-jjwkrlquazzjbvlm
-ttosfloajukoytfb
-llateudmzxrzbqph
-criqihrysgesmpsx
-npszvlittbcxxknj
-qmzojrvraitrktil
-cfyoozzpwxwkwoto
-daxohtcgvtktggfw
-vthkpkoxmiuotjaj
-pkfkyobvzjeecnui
-ojcjiqrfltbhcdze
-scbivhpvjkjbauun
-ysowvwtzmqpjfwyp
-laeplxlunwkfeaou
-jufhcikovykwjhsa
-xrucychehzksoitr
-pyaulaltjkktlfkq
-oypfrblfdhwvqxcv
-zybrgxixvhchgzcf
-puoagefcmlxelvlp
-xjnhfdrsbhszfsso
-ocgvzryoydaoracw
-bxpnqllmptkpeena
-pziyeihxlxbbgdio
-bvtrhtlbfzmglsfc
-ggpuvtseebylsrfk
-pukenexjqecnivfj
-jswabfbzpnhhdbpn
-enojrtwqpfziyqsv
-rjtmxudgcudefuiz
-iqmjxynvtvdacffc
-uheywxlsusklitvl
-kwhxduejafdpmqdc
-rspgblenbqlmcltn
-rczhurnrqqgjutox
-dqhytibjzxkdblzl
-hpbieadydiycvfys
-pucztfoqvenxiuym
-nqpfzgpblwijiprf
-ltgseeblgajbvltk
-mwxukbsnapewhfrc
-dvxluiflicdtnxix
-pexfbpgnqiqymxcq
-dakudfjjwtpxuzxy
-letlceyzlgmnrewu
-ojktahbsdifdfhmd
-anezoybbghjudbih
-sawxtlvzysaqkbbf
-ttnkctcevpjiwqua
-edrwrdvbaoqraejd
-wnbfilvuienjxlcr
-wqhzwvyybyxhhtsm
-jxbgvyaqczwdlxfo
-wbypqfmbwrsvfmdv
-izdxjyfpidehbets
-vbxbggqseurknjor
-egpmpoxickhvwdlz
-ivfrzklvpwoemxsy
-xkziseheibmrpdww
-xnrmtoihaudozksa
-efemdmbxdsaymlrw
-yjdjeckmsrckaagx
-vlftqxxcburxnohv
-fwyquwgajaxebduj
-dwpmqvcxqwwnfkkr
-isduxxjfsluuvwga
-avdtdppodpntojgf
-vrcoekdnutbnlgqk
-kbhboxjmgomizxkl
-cgsfpjrmewexgzfy
-usdtnhjxbvtnafvp
-bjoddgxbuxzhnsqd
-hoyqdzofddedevsb
-rwiwbvqfjajotaoj
-iabomphsuyfptoos
-bubeonwbukprpvhy
-xurgunofmluhisxm
-puyojzdvhktawkua
-dbvqhztzdsncrxkb
-oaeclqzyshuuryvm
-nmgwfssnflxvcupr
-vjkiwbpunkahtsrw
-romyflhrarxchmyo
-yecssfmetezchwjc
-qwtocacqdslhozkd
-mesexvfbtypblmam
-mtjucgtjesjppdtt
-pvodhqqoeecjsvwi
-vvlcwignechiqvxj
-wiqmzmmjgjajwgov
-kwneobiiaixhclev
-lkdeglzrrxuomsyt
-oqovuwcpwbghurva
-lfsdcxsasmuarwwg
-awkbafhswnfbhvck
-sztxlnmyvqsiwljg
-hozxgyxbcxjzedvs
-oifkqgfqmflxvyzn
-mfvnehsajlofepib
-delgbyfhsyhmyrfa
-uenimmwriihxoydv
-vjqutpilsztquutn
-kfebsaixycrodhvl
-coifyqfwzlovrpaj
-xiyvdxtkqhcqfsqr
-hoidcbzsauirpkyt
-fiumhfaazfkbaglq
-fzwdormfbtkdjgfm
-faxqrortjdeihjfv
-ljhaszjklhkjvrfi
-pzrxsffkuockoqyl
-immbtokjmwyrktzn
-lzgjhyiywwnuxpfx
-vhkocmwzkfwjuzog
-ghntjkszahmdzfbl
-gbcthxesvqbmzggy
-oyttamhpquflojkh
-nbscpfjwzylkfbtv
-wnumxzqbltvxtbzs
-jfhobjxionolnouc
-nrtxxmvqjhasigvm
-hweodfomsnlgaxnj
-lfgehftptlfyvvaj
-ccoueqkocrdgwlvy
-euhgvirhsaotuhgf
-pdlsanvgitjvedhd
-seokvlbhrfhswanv
-pntdqaturewqczti
-jkktayepxcifyurj
-dhzzbiaisozqhown
-wehtwakcmqwczpbu
-zwvozvspqmuckkcd
-efucjlrwxuhmjubr
-lzodaxuyntrnxwvp
-qdezfvpyowfpmtwd
-mizijorwrkanesva
-txmitbiqoiryxhpz
-xhsqgobpouwnlvps
-muixgprsknlqaele
-disgutskxwplodra
-bmztllsugzsqefrm
-ymwznyowpaaefkhm
-ebfifzloswvoagqh
-pkldomvvklefcicw
-ziqzbbfunmcgrbtq
-iuekfpbkraiwqkic
-jflgjidirjapcuqo
-achsfbroyrnqnecg
-udbhouhlgjjzapzr
-arerrohyhhkmwhyo
-txyjzkqexgvzdtow
-ogzrjwibvzoucrpg
-rfdftaesxdnghwhd
-axdhwmpuxelmpabo
-gtktemowbsvognac
-wkfuclilhqjzxztk
-qbwjouutzegaxhrz
-opfziwqqbwhzzqhj
-pvcvcsupfwsmeacs
-xsbohvbguzsgpawn
-sczoefukwywxriwj
-oqkhcqfdeaifbqoc
-vtsrholxbjkhwoln
-yuvapljnwbssfbhi
-dxdfwccqvyzeszyl
-gdbmjtonbiugitmb
-qunirtqbubxalmxr
-zzxsirhdaippnopr
-fibtndkqjfechbmq
-gqgqyjvqmfiwiyio
-ihwsfkwhtzuydlzw
-eygyuffeyrbbhlit
-zdlsaweqomzrhdyy
-ptbgfzuvxiuuxyds
-llxlfdquvovzuqva
-wfrltggyztqtyljv
-kwipfevnbralidbm
-gbhqfbrvuseellbx
-obkbuualrzrakknv
-hlradjrwyjgfqugu
-vtqlxbyiaiorzdsp
-tedcbqoxsmbfjeyy
-cxdppfvklbdayghy
-gjnofexywmdtgeft
-ldzeimbbjmgpgeax
-egrwsmshbvbawvja
-vadfrjvcrdlonrkg
-mojorplakzfmzvtp
-jyurlsoxhubferpo
-ijwqogivvzpbegkm
-cnmetoionfxlutzg
-lawigelyhegqtyil
-mqosapvnduocctcd
-eqncubmywvxgpfld
-vigfretuzppxkrfy
-ncwynsziydoflllq
-cbllqinsipfknabg
-ndtbvdivzlnafziq
-iqrrzgzntjquzlrs
-damkuheynobqvusp
-jxctymifsqilyoxa
-ylritbpusymysmrf
-paoqcuihyooaghfu
-obhpkdaibwixeepl
-igrmhawvctyfjfhd
-ybekishyztlahopt
-vkbniafnlfqhhsrq
-kltdigxmbhazrywf
-ufhcoyvvxqzeixpr
-klcxdcoglwmeynjt
-funpjuvfbzcgdhgs
-akgyvyfzcpmepiuc
-zhlkgvhmjhwrfmua
-ibsowtbnrsnxexuz
-vpufbqilksypwlrn
-ngrintxhusvdkfib
-ziuwswlbrxcxqslw
-sucledgxruugrnic
-zwnsfsyotmlpinew
-oaekskxfcwwuzkor
-qjmqwaktpzhwfldu
-tmgfgqgpxaryktxo
-qfaizepgauqxvffk
-addkqofusrstpamf
-shdnwnnderkemcts
-gwfygbsugzptvena
-fpziernelahopdsj
-bkkrqbsjvyjtqfax
-gxrljlqwxghbgjox
-ipfwnqaskupkmevm
-nnyoyhnqyfydqpno
-lgzltbrrzeqqtydq
-fgzxqurhtdfucheb
-jvpthtudlsoivdwj
-bmlhymalgvehvxys
-fhklibetnvghlgnp
-hfcyhptxzvblvlst
-donanindroexgrha
-oqawfmslbgjqimzx
-jzgehjfjukizosep
-bhlgamcjqijpvipb
-jrcrdjrvsyxzidsk
-ouwfwwjqezkofqck
-wrvsbnkhyzayialf
-knhivfqjxrxnafdl
-hbxbgqsqwzijlngf
-qlffukpfmnxpfiyq
-evhxlouocemdkwgk
-baxhdrmhaukpmatw
-nwlyytsvreqaminp
-ljsjjzmlsilvxgal
-onunatwxfzwlmgpk
-njgolfwndqnwdqde
-ngdgcjzxupkzzbqi
-ieawycvvmvftbikq
-ccyvnexuvczvtrit
-enndfwjpwjyasjvv
-tcihprzwzftaioqu
-bkztdkbrxfvfeddu
-qkvhtltdrmryzdco
-rurtxgibkeaibofs
-mjxypgscrqiglzbp
-unpkojewduprmymd
-csqtkhjxpbzbnqog
-mednhjgbwzlhmufi
-sfrwfazygygzirwd
-ijqeupbrhhpqxota
-cmhpncanwudyysyh
-wwcxbwzrplfzrwxd
-jriomldifuobjpmq
-radonyagpulnnyee
-ryqjwxsspbbhnptd
-yeoqpnsdhludlmzf
-qsqlkeetyalenueh
-qnnedenwsjdrcrzt
-lejkuhsllxbhfcrx
-anddbvllrrqefvke
-wdtljquijaksvdsv
-adslgvfuqqdkzvbc
-whbccefjpcnjwhaq
-kqrfuankaibohqsg
-fyxisfwihvylgnfd
-rwqdrddghyqudcif
-syhzowthaaiiouaf
-zjmrtgrnohxmtidu
-deecwkfvjffxrzge
-dztmvolqxkhdscxe
-cdghcrgavygojhqn
-pepqmdbjhnbugqeu
-pnumdjpnddbxhieg
-jzfhxeyahiagizfw
-hdkwugrhcniueyor
-gmgudeqlbmqynflu
-toidiotdmfkxbzvm
-pyymuoevoezlfkjb
-etrbwuafvteqynlr
-usvytbytsecnmqtd
-dfmlizboawrhmvim
-vrbtuxvzzefedlvs
-vslcwudvasvxbnje
-xdxyvoxaubtwjoif
-mduhzhascirittdf
-cqoqdhdxgvvvxamk
-dshnfwhqjbhuznqr
-zimthfxbdmkulkjg
-luylgfmmwbptyzpj
-iujpcgogshhotqrc
-caqcyzqcumfljvsp
-sprtitjlbfpygxya
-fnconnrtnigkpykt
-irmqaqzjexdtnaph
-bbqrtoblmltvwome
-ozjkzjfgnkhafbye
-hwljjxpxziqbojlw
-zahvyqyoqnqjlieb
-dptshrgpbgusyqsc
-uzlbnrwetkbkjnlm
-yccaifzmvbvwxlcc
-wilnbebdshcrrnuu
-evxnoebteifbffuq
-khbajekbyldddzfo
-kjivdcafcyvnkojr
-wtskbixasmakxxnv
-uzmivodqzqupqkwx
-rxexcbwhiywwwwnu
-rowcapqaxjzcxwqi
-fkeytjyipaxwcbqn
-pyfbntonlrunkgvq
-qiijveatlnplaifi
-ltnhlialynlafknw
-urrhfpxmpjwotvdn
-xklumhfyehnqssys
-civrvydypynjdoap
-fvbmxnfogscbbnyd
-oznavyflpzzucuvg
-iyshrpypfbirahqo
-qmzbfgelvpxvqecy
-xkkxaufomsjbofmk
-irlouftdmpitwvlq
-csjoptbdorqxhnjg
-bkryeshfsaqpdztm
-guxbdqzfafsjoadl
-tgrltexgrzatzwxf
-cwsgsijqdanubxad
-xafnexgturwrzyrg
-apcrsqdbsbaxocxr
-pspgxnzcevmvvejk
-szephmeegvegugdt
-ndjsoloeacasxjap
-bdnfksliscnirjfu
-ehglacmzpcgglpux
-jwweijomqfcupvzw
-yesblmmkqhbazmdu
-sjsmalypmuslzgac
-fkiqatyttlnuhdho
-tlhnyuzdocvfdihq
-ngehtjmycevnybga
-obxodzcdgtrycgry
-stkyrvdfbwovawmk
-bdkhqcfrqaxhxloo
-gpvumnuoiozipnrk
-jbhanddinpqhxeol
-hwkzkmbmsrvunzit
-rfuomegkxbyamjpw
-yzbljuksletipzwm
-eafedkagwitzqigl
-prenqvsbotqckgwy
-spedpbwzphdrfxfz
-cmsuqwemhwixkxet
-xgdyeqbqfldvaccq
-eooxgsrfsbdaolja
-kyhqylxooewrhkho
-mswieugqpoefmspt
-uszoqundysdyeqlc
-hkmjdggxefdyykbq
-dtuhjnlaliodtlvh
-oalbueqbhpxoxvvx
-oowxtxsoqdwhzbya
-lclajfsrpmtwvzkm
-fxmjufpqtpyazeqo
-ozlmreegxhfwwwmf
-mqzrajxtxbaemrho
-nfglecsyqduhakjr
-nkxqtmasjjkpkqbp
-jjfonbqimybvzeus
-vjqkhkhjlmvpwkud
-wxxhnvfhetsamzjr
-pladhajujzttgmsw
-dbycgxeymodsdlhm
-qxszeuaahuoxjvwu
-adultomodzrljxve
-dmhgrbhvvpxyzwdn
-slohrlwxerpahtyp
-mngbocwyqrsrrxdb
-facyrtflgowfvfui
-hyvazpjucgghmmxh
-twtrvjtncmewcxit
-uejkrpvilgccfpfr
-psqvolfagjfvqkum
-nvzolslmiyavugpp
-lpjfutvtwbddtqiu
-fkjnfcdorlugmcha
-eaplrvdckbcqqvhq
-xrcydhkockycburw
-iswmarpwcazimqxn
-kicnnkjdppitjwrl
-vwywaekzxtmeqrsu
-dxlgesstmqaxtjta
-pmeljgpkykcbujbb
-vhpknqzhgnkyeosz
-jprqitpjbxkqqzmz
-fiprxgsqdfymyzdl
-dzvfwvhfjqqsifga
-aeakhfalplltmgui
-frqrchzvenhozzsu
-hsvikeyewfhsdbmy
-puedjjhvxayiwgvg
-zmsonnclfovjoewb
-bnirelcaetdyaumi
-szvudroxhcitatvf
-sccfweuyadvrjpys
-yiouqrnjzsdwyhwa
-xyjhkqbnfmjjdefz
-fjwgemkfvettucvg
-aapqpwapzyjnusnr
-dytxpkvgmapdamtc
-hgocpfoxlheqpumw
-twzuiewwxwadkegg
-qdbosnhyqmyollqy
-fclbrlkowkzzitod
-sgxnrrpwhtkjdjth
-xckvsnkvnvupmirv
-nioicfeudrjzgoas
-lcemtyohztpurwtf
-oyjxhhbswvzekiqn
-idkblbyjrohxybob
-rthvloudwmktwlwh
-oyzhmirzrnoytaty
-ysdfhuyenpktwtks
-wxfisawdtbpsmwli
-vgmypwlezbmzeduk
-rpepcfpelvhzzxzj
-zxbovsmixfvmamnj
-cpkabmaahbnlrhiz
-jvomcbqeoqrmynjj
-iqdeisnegnkrkdws
-ilhemlrtxdsdnirr
-fjimtscrwbfuwmpo
-lmfiylebtzwtztmx
-ddouhysvomrkcpgu
-xtjwvzdhgnwwauwi
-cntzuwcumbsebwyy
-hieqvdlvnxkygeda
-hushfszxskjdrjxi
-xvdfzqblccfoxvyq
-nldnrtieteunyxnb
-vszpidfocenlhzqb
-ofcuvtwhortxesoq
-bwniqemqwxlejcfq
-wkqiwdjnytjnomps
-rbadoommlmrictte
-nsmxhpothlulxivt
-bvzbfcvenskqxejr
-sdqeczmzpqqtqabq
-bjveyzniaaliatkw
-zxsqlntyjajjxytk
-jkoxlerbtidsuepg
-ewtlibdkeqwgxnqt
-lmrshemwxrdwzrgc
-nekcdyxmftlymfir
-edaqvmulzkskzsfy
-znmvqaupykjmyebx
-ximtebuxwhqpzubd
-rrlstppkknqyxlho
-uyibwcitxixjfwcr
-chrvoierkimesqmm
-dltxmwhheldvxwqe
-xfuthxjuuizanfjy
-vtiwavmxwonpkpug
-phchnujfnxewglht
-owvmetdjcynohxtw
-cbtujdrumixxatry
-iirzildsfxipfipe
-sqxcscqyofohotcy
-sbubnekndkvovuqg
-jzhsqqxqdrtibtcd
-mscwasyvxkhlvwbn
-bpafxtagbuxivbwz
-uhvueesygaxrqffw
-trrxlibhtmzuwkkl
-yktkmkokmfslgkml
-gfzzzdptaktytnqg
-pgqmaiwzhplnbyhg
-qjiptlkwfshunsfb
-lewvlpescsyunxck
-tywsfatykshogjas
-qtrnwjjgxdektjgi
-arypcritpwijczkn
-jwxvngigbhfpiubf
-upsjdctitlbqlnhf
-lvpjlrpnmdjiscrq
-jvzchdrsnkgpgsti
-wuoesbwunpseyqzu
-xuqspvoshgxmrnrb
-icdawnmfnpnmyzof
-hwcwtibgpvctznuo
-bzdjrniddyamfloq
-hffkxtzuazageruv
-deixfxjvzbitalnc
-zihsohukiqrgsnvw
-nwoondfnlgowavkg
-qnuulsywgnoillgn
-koozejhfjyzuhviy
-oetcoipohymhpump
-cizwpfczfoodwuly
-jghlinczhtaxifau
-svjejifbidnvvdvy
-rxmbsnaqhzcnbfcl
-vveubmiecvdtrket
-sbihpvrcnzjtgfep
-iqbuljuxkwrlebvw
-ptrhvxrpezqvmmvv
-duwzugnhktpiybjw
-lijafjnujfeflkva
-coylvegferuuyfop
-fowsjrgammrqkkof
-pgmcruaioccmbrbz
-osejwflxagwqtjoi
-otqflckqgxzvtper
-slwyntdcrncktoka
-hzcdzsppcfkrblqg
-jksdmmvtzkqaompg
-galwwwgugetdohkg
-zbghtjvuikmfjuef
-dmqwcamjtlcofqib
-zbczldlfdzemxeys
-mdlqoklybhppdkwe
-tuyajhkexrrrvnlb
-ylfolaubymxmkowo
-nnsyrfnoyrxswzxn
-zkhunhhhigbsslfk
-spbokzdfkbmflanz
-zmzxvrwdhiegfely
-imywhfczvmgahxwl
-fnvabvxeiqvsarqq
-yschramprctnputs
-ubyjrgdzsvxzvouj
-qnvdhpptympctfer
-smipxcntyhjpowug
-ouhjibgcmotegljy
-zpflubaijjqqsptz
-fgysnxrnfnxprdmf
-pbpznrexzxomzfvj
-thhzjresjpmnwtdv
-sbmokolkhvbfqmua
-sxxpdohxlezmqhhx
-pevvsyqgoirixtqh
-wdxrornmhqsbfznb
-zjqziqbctxkshqcn
-nbqcwpzfwfaahylk
-bxbvkonpcxprxqjf
-xplbpqcnwzwqxheb
-prsakggmnjibrpoy
-xoguxbpnrvyqarjl
-ilrgryrmgwjvpzjy
-efwrmokaoigjtrij
-yhcncebopycjzuli
-gwcmzbzaissohjgn
-lggmemwbbjuijtcf
-fkqedbfrluvkrwwl
-jcbppekecevkwpuk
-onvolrckkxeyzfjt
-zzousprgrmllxboy
-cajthmamvxuesujl
-rmiozfsikufkntpg
-lvekypkwjbpddkcv
-dwaqzfnzcnabersa
-pcdsskjopcqwhyis
-uabepbrrnxfbpyvx
-yxlgdomczciiunrk
-ccerskfzctqxvrkz
-edvmkntljlncwhax
-xtcbwecdwygrvowo
-axqgqjqkqwrgcqot
-tyjrynolpzqwnjgj
-thrtmlegdjsuofga
-mpgoeqkzzqqugait
-emuslxgoefdjyivl
-klehpcehdznpssfb
-xfgvugyrdxolixkc
-acenyrbdwxywmwst
-yqgperajsfsamgan
-dbjxlnumrmhipquw
-hsnhirmswcenewxm
-qehqkbhmgucjjpwo
-gprjdglsbtsfzqcw
-wvqkyrkoratfmvfi
-myhzlerupqbduqsl
-couyazesiuhwwhht
-scxzehubxhkfejrr
-gqlitwfriqkmzqdd
-pxtbmqelssoagxko
-dzhklewjqzmrfzsw
-yxgeypduywntnbji
-kwzbgzhkzbgedlfh
-vukmuyfstgmscuab
-vcmaybfvdgwnasgt
-qmybkqqdhjigzmum
-cbnuicuncvczyalu
-qdgpsdpdlgjasjqr
-kdzxqqheurupejjo
-mcatrxfchbqnxelm
-badunwkeggdkcgco
-ntaeanvcylpoqmxi
-ghnyfytpzgvuokjn
-ozepydixmjijdmts
-qefcfwzdhwmcyfvp
-ycyktmpaqgaxqsxt
-edpizkxnsxeeebfl
-uwciveajsxxwoqyr
-rbvjkljpxtglqjsh
-nbplrskduutrptfk
-vewrbadvkseuloec
-upaotnjxquomoflx
-qfwxkinrousqywdd
-mqzxvvskslbxvyjt
-oxicszyiqifoyugx
-bkitxwzjpabvhraj
-ydrbyjecggynjpir
-hezyteaublxxpamq
-hxkuektnoovsehnd
-cwtbbavnhlpiknza
-qrwvkhbyasgfxwol
-qryjbohkprfazczc
-wjksnogpxracrbud
-znmsxbhliqxhvesr
-gkippedrjzmnnwkp
-pklylwsnsyyxwcwg
-osdpwbxoegwaiemr
-kpslrrrljgtjiqka
-vuqkloqucpyzfxgk
-bvtdsisgvkuzghyl
-qlcayluuyvlhdfyy
-kbimqwnzanlygaya
-nvoeanlcfhczijed
-kqvcijcuobtdwvou
-pmhdpcmxnprixitl
-yueilssewzabzmij
-zqxhafrvjyeyznyg
-mhdounmxkvnnsekx
-hnacyglnzicxjakg
-iaxfdqibnrcjdlyl
-iypoelspioegrwix
-uiqouxzmlnjxnbqt
-kslgjfmofraorvjo
-bgvotsdqcdlpkynk
-huwcgxhvrrbvmmth
-vpqyfnkqqjacpffw
-hpjgdfovgmrzvrcl
-vbntbhbvdeszihzj
-nrbyyuviwyildzuw
-wckeoadqzsdnsbox
-xgsobwuseofxsxox
-anvhsxdshndembsd
-iygmhbegrwqbqerg
-ylrsnwtmdsrgsvlh
-zvvejnrarsavahvc
-yncxhmmdtxxeafby
-kekgiglblctktnes
-uoqgymsrlrwdruzc
-saaoymtmnykusicw
-bqvcworpqimwglcp
-zbpgtheydoyzipjv
-pkykzslwsjbhcvcj
-jhwxxneyuuidrzvl
-pafeyajcrlehmant
-klszcvtmcdeyfsmj
-ledsltggvrbvlefn
-hubpbvxknepammep
-gthxhaapfpgtilal
-jtfhbozlometwztj
-jrhshycyenurbpwb
-fyaxbawrsievljqv
-lgfcgbenlqxqcxsd
-dhedabbwbdbpfmxp
-mxzgwhaqobyvckcm
-qboxojoykxvwexav
-jcpzfjnmvguwjnum
-ohpsxnspfwxkkuqe
-nyekrqjlizztwjqp
-thuynotacpxjzroj
-wymbolrlwosnbxqx
-iyaqihnqvewxdtjm
-hdvdbtvfpdrejenu
-gtjscincktlwwkkf
-wtebigbaythklkbd
-        ";
+        public static string input = @"b -> 956
+        af AND ah -> ai
+NOT lk -> ll
+hz RSHIFT 1 -> is
+NOT go -> gp
+du OR dt -> dv
+x RSHIFT 5 -> aa
+at OR az -> ba
+eo LSHIFT 15 -> es
+ci OR ct -> cu
+b RSHIFT 5 -> f
+fm OR fn -> fo
+NOT ag -> ah
+v OR w -> x
+g AND i -> j
+an LSHIFT 15 -> ar
+1 AND cx -> cy
+jq AND jw -> jy
+iu RSHIFT 5 -> ix
+gl AND gm -> go
+NOT bw -> bx
+jp RSHIFT 3 -> jr
+hg AND hh -> hj
+bv AND bx -> by
+er OR es -> et
+kl OR kr -> ks
+et RSHIFT 1 -> fm
+e AND f -> h
+u LSHIFT 1 -> ao
+he RSHIFT 1 -> hx
+eg AND ei -> ej
+bo AND bu -> bw
+dz OR ef -> eg
+dy RSHIFT 3 -> ea
+gl OR gm -> gn
+da LSHIFT 1 -> du
+au OR av -> aw
+gj OR gu -> gv
+eu OR fa -> fb
+lg OR lm -> ln
+e OR f -> g
+NOT dm -> dn
+NOT l -> m
+aq OR ar -> as
+gj RSHIFT 5 -> gm
+hm AND ho -> hp
+ge LSHIFT 15 -> gi
+jp RSHIFT 1 -> ki
+hg OR hh -> hi
+lc LSHIFT 1 -> lw
+km OR kn -> ko
+eq LSHIFT 1 -> fk
+1 AND am -> an
+gj RSHIFT 1 -> hc
+aj AND al -> am
+gj AND gu -> gw
+ko AND kq -> kr
+ha OR gz -> hb
+bn OR by -> bz
+iv OR jb -> jc
+NOT ac -> ad
+bo OR bu -> bv
+d AND j -> l
+bk LSHIFT 1 -> ce
+de OR dk -> dl
+dd RSHIFT 1 -> dw
+hz AND ik -> im
+NOT jd -> je
+fo RSHIFT 2 -> fp
+hb LSHIFT 1 -> hv
+lf RSHIFT 2 -> lg
+gj RSHIFT 3 -> gl
+ki OR kj -> kk
+NOT ak -> al
+ld OR le -> lf
+ci RSHIFT 3 -> ck
+1 AND cc -> cd
+NOT kx -> ky
+fp OR fv -> fw
+ev AND ew -> ey
+dt LSHIFT 15 -> dx
+NOT ax -> ay
+bp AND bq -> bs
+NOT ii -> ij
+ci AND ct -> cv
+iq OR ip -> ir
+x RSHIFT 2 -> y
+fq OR fr -> fs
+bn RSHIFT 5 -> bq
+0 -> c
+14146 -> b
+d OR j -> k
+z OR aa -> ab
+gf OR ge -> gg
+df OR dg -> dh
+NOT hj -> hk
+NOT di -> dj
+fj LSHIFT 15 -> fn
+lf RSHIFT 1 -> ly
+b AND n -> p
+jq OR jw -> jx
+gn AND gp -> gq
+x RSHIFT 1 -> aq
+ex AND ez -> fa
+NOT fc -> fd
+bj OR bi -> bk
+as RSHIFT 5 -> av
+hu LSHIFT 15 -> hy
+NOT gs -> gt
+fs AND fu -> fv
+dh AND dj -> dk
+bz AND cb -> cc
+dy RSHIFT 1 -> er
+hc OR hd -> he
+fo OR fz -> ga
+t OR s -> u
+b RSHIFT 2 -> d
+NOT jy -> jz
+hz RSHIFT 2 -> ia
+kk AND kv -> kx
+ga AND gc -> gd
+fl LSHIFT 1 -> gf
+bn AND by -> ca
+NOT hr -> hs
+NOT bs -> bt
+lf RSHIFT 3 -> lh
+au AND av -> ax
+1 AND gd -> ge
+jr OR js -> jt
+fw AND fy -> fz
+NOT iz -> ja
+c LSHIFT 1 -> t
+dy RSHIFT 5 -> eb
+bp OR bq -> br
+NOT h -> i
+1 AND ds -> dt
+ab AND ad -> ae
+ap LSHIFT 1 -> bj
+br AND bt -> bu
+NOT ca -> cb
+NOT el -> em
+s LSHIFT 15 -> w
+gk OR gq -> gr
+ff AND fh -> fi
+kf LSHIFT 15 -> kj
+fp AND fv -> fx
+lh OR li -> lj
+bn RSHIFT 3 -> bp
+jp OR ka -> kb
+lw OR lv -> lx
+iy AND ja -> jb
+dy OR ej -> ek
+1 AND bh -> bi
+NOT kt -> ku
+ao OR an -> ap
+ia AND ig -> ii
+NOT ey -> ez
+bn RSHIFT 1 -> cg
+fk OR fj -> fl
+ce OR cd -> cf
+eu AND fa -> fc
+kg OR kf -> kh
+jr AND js -> ju
+iu RSHIFT 3 -> iw
+df AND dg -> di
+dl AND dn -> do
+la LSHIFT 15 -> le
+fo RSHIFT 1 -> gh
+NOT gw -> gx
+NOT gb -> gc
+ir LSHIFT 1 -> jl
+x AND ai -> ak
+he RSHIFT 5 -> hh
+1 AND lu -> lv
+NOT ft -> fu
+gh OR gi -> gj
+lf RSHIFT 5 -> li
+x RSHIFT 3 -> z
+b RSHIFT 3 -> e
+he RSHIFT 2 -> hf
+NOT fx -> fy
+jt AND jv -> jw
+hx OR hy -> hz
+jp AND ka -> kc
+fb AND fd -> fe
+hz OR ik -> il
+ci RSHIFT 1 -> db
+fo AND fz -> gb
+fq AND fr -> ft
+gj RSHIFT 2 -> gk
+cg OR ch -> ci
+cd LSHIFT 15 -> ch
+jm LSHIFT 1 -> kg
+ih AND ij -> ik
+fo RSHIFT 3 -> fq
+fo RSHIFT 5 -> fr
+1 AND fi -> fj
+1 AND kz -> la
+iu AND jf -> jh
+cq AND cs -> ct
+dv LSHIFT 1 -> ep
+hf OR hl -> hm
+km AND kn -> kp
+de AND dk -> dm
+dd RSHIFT 5 -> dg
+NOT lo -> lp
+NOT ju -> jv
+NOT fg -> fh
+cm AND co -> cp
+ea AND eb -> ed
+dd RSHIFT 3 -> df
+gr AND gt -> gu
+ep OR eo -> eq
+cj AND cp -> cr
+lf OR lq -> lr
+gg LSHIFT 1 -> ha
+et RSHIFT 2 -> eu
+NOT jh -> ji
+ek AND em -> en
+jk LSHIFT 15 -> jo
+ia OR ig -> ih
+gv AND gx -> gy
+et AND fe -> fg
+lh AND li -> lk
+1 AND io -> ip
+kb AND kd -> ke
+kk RSHIFT 5 -> kn
+id AND if -> ig
+NOT ls -> lt
+dw OR dx -> dy
+dd AND do -> dq
+lf AND lq -> ls
+NOT kc -> kd
+dy AND ej -> el
+1 AND ke -> kf
+et OR fe -> ff
+hz RSHIFT 5 -> ic
+dd OR do -> dp
+cj OR cp -> cq
+NOT dq -> dr
+kk RSHIFT 1 -> ld
+jg AND ji -> jj
+he OR hp -> hq
+hi AND hk -> hl
+dp AND dr -> ds
+dz AND ef -> eh
+hz RSHIFT 3 -> ib
+db OR dc -> dd
+hw LSHIFT 1 -> iq
+he AND hp -> hr
+NOT cr -> cs
+lg AND lm -> lo
+hv OR hu -> hw
+il AND in -> io
+NOT eh -> ei
+gz LSHIFT 15 -> hd
+gk AND gq -> gs
+1 AND en -> eo
+NOT kp -> kq
+et RSHIFT 5 -> ew
+lj AND ll -> lm
+he RSHIFT 3 -> hg
+et RSHIFT 3 -> ev
+as AND bd -> bf
+cu AND cw -> cx
+jx AND jz -> ka
+b OR n -> o
+be AND bg -> bh
+1 AND ht -> hu
+1 AND gy -> gz
+NOT hn -> ho
+ck OR cl -> cm
+ec AND ee -> ef
+lv LSHIFT 15 -> lz
+ks AND ku -> kv
+NOT ie -> if
+hf AND hl -> hn
+1 AND r -> s
+ib AND ic -> ie
+hq AND hs -> ht
+y AND ae -> ag
+NOT ed -> ee
+bi LSHIFT 15 -> bm
+dy RSHIFT 2 -> dz
+ci RSHIFT 2 -> cj
+NOT bf -> bg
+NOT im -> in
+ev OR ew -> ex
+ib OR ic -> id
+bn RSHIFT 2 -> bo
+dd RSHIFT 2 -> de
+bl OR bm -> bn
+as RSHIFT 1 -> bl
+ea OR eb -> ec
+ln AND lp -> lq
+kk RSHIFT 3 -> km
+is OR it -> iu
+iu RSHIFT 2 -> iv
+as OR bd -> be
+ip LSHIFT 15 -> it
+iw OR ix -> iy
+kk RSHIFT 2 -> kl
+NOT bb -> bc
+ci RSHIFT 5 -> cl
+ly OR lz -> ma
+z AND aa -> ac
+iu RSHIFT 1 -> jn
+cy LSHIFT 15 -> dc
+cf LSHIFT 1 -> cz
+as RSHIFT 3 -> au
+cz OR cy -> da
+kw AND ky -> kz
+lx -> a
+iw AND ix -> iz
+lr AND lt -> lu
+jp RSHIFT 5 -> js
+aw AND ay -> az
+jc AND je -> jf
+lb OR la -> lc
+NOT cn -> co
+kh LSHIFT 1 -> lb
+1 AND jj -> jk
+y OR ae -> af
+ck AND cl -> cn
+kk OR kv -> kw
+NOT cv -> cw
+kl AND kr -> kt
+iu OR jf -> jg
+at AND az -> bb
+jp RSHIFT 2 -> jq
+iv AND jb -> jd
+jn OR jo -> jp
+x OR ai -> aj
+ba AND bc -> bd
+jl OR jk -> jm
+b RSHIFT 1 -> v
+o AND q -> r
+NOT p -> q
+k AND m -> n
+as RSHIFT 2 -> at";
     }
 }

@@ -1,9 +1,6 @@
 using System;
-using System.Text.RegularExpressions;
-using System.Linq;
 using System.Collections.Generic;
-using System.Security.Cryptography;
-using System.Text;
+
 
 namespace Advent_of_code
 {
@@ -16,8 +13,6 @@ namespace Advent_of_code
         static char LastChar = ':';
         static bool dveHlasky = false;
         static bool dveVedle = false;
-
-
         static List<Char> samohlaskyList = new List<char>()
         {
 'a',
@@ -36,7 +31,7 @@ namespace Advent_of_code
         };
 
 
-        static void Main(string[] args)
+        static void A1()
         {
             foreach (char item in input.ToCharArray())
             {
@@ -74,9 +69,35 @@ namespace Advent_of_code
     class A2015_5_2
     {
         static string input = Input.input;
+        static int pocetStringu = 0;
+
+
         static void A2()
         {
-
+            foreach (var item in input.Split("\n", StringSplitOptions.RemoveEmptyEntries))
+            {
+                if (StejnyObJedno(item) && DvaPáry(item))
+                    pocetStringu++;
+            }
+            System.Console.WriteLine(pocetStringu);
+        }
+        static bool StejnyObJedno(string item)
+        {
+            for (int i = 0; i < item.Length - 2; i++)
+            {
+                if (item[i] == item[i + 2])
+                    return true;
+            }
+            return false;
+        }
+        static bool DvaPáry(string item)
+        {
+            for (int i = 2; i < item.Length; i++)
+            {
+                if (item.Substring(i).Contains(item.Substring(i - 2, 2)))
+                    return true;
+            }
+            return false;
         }
     }
 }
